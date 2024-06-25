@@ -1,0 +1,26 @@
+# IMAGEN MODELO
+FROM eclipse-temurin:17.0.11_9-jdk
+
+# INFORMAR EL PUERTO DONDE SE EJECUTA EL CONTENEDOR
+EXPOSE 8080
+
+# DEFINIR DIRECTORIO RAIZ DEL CONTENEDOR
+WORKDIR /root
+
+# COPIAR Y PEGAR ARCHIVOS DEL CONTENEDOR
+COPY ./pom.xml /root
+COPY ./.mvn /root/.mvn
+COPY ./mvnw /root
+COPY ./mvnw.cmd /root
+
+# DESCARGAR LAS DEPENDENCIAS
+RUN ./mvnw dependency:go-offline
+
+# COPIAR CODIGO FUENTE EN EL CONTENEDOR
+COPY ./src /root/src
+
+# CONSTRUIR APLIACION
+RUN ./mvnw clean install -DskipTests
+
+# LEVANTAR APLICACION CUANDO EL CONTENEDOR INICIE
+ENTRYPOINT ["java","-jar","/root/target/Portfolio-Inventory-System-0.0.1-SNAPSHOT.jar"]

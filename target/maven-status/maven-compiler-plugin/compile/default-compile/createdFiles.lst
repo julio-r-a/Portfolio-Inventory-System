@@ -1,1 +1,6 @@
+com/example/portfolioinventorysystem/controller/ProductController.class
+com/example/portfolioinventorysystem/service/ProductService.class
 com/example/portfolioinventorysystem/PortfolioInventorySystemApplication.class
+com/example/portfolioinventorysystem/repository/ProductRepository.class
+com/example/portfolioinventorysystem/model/Product.class
+com/example/portfolioinventorysystem/service/IProductService.class

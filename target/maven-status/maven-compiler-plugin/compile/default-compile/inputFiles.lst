@@ -1,1 +1,6 @@
-/Users/julio/Documents/Portafolio-Git/Portfolio-Inventory-System/src/main/java/com/example/portfolioinventorysystem/PortfolioInventorySystemApplication.java
+/Users/julio/Documents/carpeta sin título/Portfolio-Inventory-System/src/main/java/com/example/portfolioinventorysystem/PortfolioInventorySystemApplication.java
+/Users/julio/Documents/carpeta sin título/Portfolio-Inventory-System/src/main/java/com/example/portfolioinventorysystem/controller/ProductController.java
+/Users/julio/Documents/carpeta sin título/Portfolio-Inventory-System/src/main/java/com/example/portfolioinventorysystem/model/Product.java
+/Users/julio/Documents/carpeta sin título/Portfolio-Inventory-System/src/main/java/com/example/portfolioinventorysystem/repository/ProductRepository.java
+/Users/julio/Documents/carpeta sin título/Portfolio-Inventory-System/src/main/java/com/example/portfolioinventorysystem/service/IProductService.java
+/Users/julio/Documents/carpeta sin título/Portfolio-Inventory-System/src/main/java/com/example/portfolioinventorysystem/service/ProductService.java
